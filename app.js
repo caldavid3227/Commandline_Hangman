@@ -11,7 +11,11 @@ const questions = [{
 
 var lives = 10;
 var solution = new Word('Tree', 'Planet', 'Cayman', 'Tacoma');
-// 
+
+// for (var i = 0; i < solution.seed.length; i++){
+// 	var newstrn = solution.seed.replace("", '_');
+// 	console.log(newstrn);
+// }
 
 inquirer.prompt(questions).then(({letter}) => {
 	const guessedCorrectly = (solution.hasCharacter(letter));
